@@ -2,13 +2,126 @@
     --color-dark: rgb(14, 14, 14);
     --color-dark2: rgb(32, 32, 32);
     --color-dark3: rgb(22, 22, 22);
+    --color-dark4: rgb(59, 59, 59);
+    --color-dark6: rgb(70, 70, 70);
+    --color-dark5: rgb(25, 25, 25);
     --color-white: #fff;
     --color-green: rgb(103, 195, 80);
     --color-green2: rgb(51, 149, 26);
     --color-red: rgb(184, 40, 35);
     --color-red2: rgb(146, 22, 17);
+    --color-purple: #9333FF;
 }
 
 body{
     font-family: 'Lato';
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.content--add-item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.content--body{
+    padding: 10%;
+    background-color: var(--color-dark3);
+    border-radius: 1rem;
+}
+
+.content--body:hover{
+    background-color: var(--color-dark5);
+    transition: .3s;
+}
+
+#input-new-task,
+#btn-new-task{
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+}
+
+#input-new-task{
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+#input-new-task:focus{
+    border: 2px solid var(--color-purple);
+    transition: .4s;
+}
+
+
+#btn-new-task{
+    background-color: var(--color-dark2);
+    color: var(--color-white);
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    cursor: pointer;
+}
+
+#btn-new-task:hover{
+background-color: var(--color-dark4);
+border: 3px solid var(--color-dark6);
+transition: .5s;
+}
+
+
+#to-do-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0;
+}
+
+#to-do-list li{
+    list-style-type: none;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#to-do-list li:hover{
+    background-color: var(--color-dark3);
+    border-radius: 1rem;
+    padding-left: 1rem;
+    transition: .5s;
+}
+
+#btn-ok{
+    border: none;
+    background-color: var(--color-red);
+    color: var(--color-red2);
+    padding: .4rem .8rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-ok:hover{
+    border: 2px solid var(--color-green2);
+    background-color: var(--color-green);
+    color: var(--color-green2);
+    transition: .5s;
 }
