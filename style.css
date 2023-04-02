@@ -125,3 +125,21 @@ transition: .5s;
     color: var(--color-green2);
     transition: .5s;
 }
+
+@media (max-width: 450px){
+   
+    #btn-new-task{
+        display: flex;
+        justify-content: center;
+        margin-left: 43%;
+    }
+    #input-new-task{
+        display: flex;
+        justify-content: center;
+        margin-left: 7%;
+    }
+    #btn-ok{
+    background-color: var(--color-green);
+    color: var(--color-green2);
+    }
+ }
