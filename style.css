@@ -136,7 +136,7 @@ transition: .5s;
     #input-new-task{
         display: flex;
         justify-content: center;
-        margin-left: 5%;
+        margin-left: 4%;
     }
     #btn-ok{
     background-color: var(--color-green);
